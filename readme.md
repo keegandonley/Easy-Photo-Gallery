@@ -95,10 +95,10 @@ Clicking an image opens a Bootstrap modal, showing the filename and the image.
 
 In your <code>index.html</code> file, there's a heading which the js file displays the filename inside of:
 <pre>
-	<h4 class="modal-title" id="photoview-label"></h4>
+	&lt;h4 class=&quot;modal-title&quot; id=&quot;photoview-label&quot;&gt;&lt;/h4&gt;
 </pre>
 There's also a div in which the image is displayed:
 <pre>
-	<div class="modal-body photoview-image"></div>
+	&lt;div class=&quot;modal-body photoview-image&quot;&gt;&lt;/div&gt;
 </pre>
 *This modal is the reason that <code>bootstrap.js</code> is included in the dependencies. As with both the Bootstrap js and css, the .min versions may be substitued out.
