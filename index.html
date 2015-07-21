@@ -4,8 +4,26 @@
 	<link rel="stylesheet" href="/styles/style.css">
 	<script src="/scripts/jquery-1.11.3.js"></script>
 	<script src="/scripts/easyphotogallery.js"></script>
+	<script src="/scripts/bootstrap.js"></script>
 </head>
 <body>
+	<!-- MODAL FOR PHOTOS -->
+	<div class="modal fade" id="photoview-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<!-- Button to close modal -->
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        	<!-- The filename will be inserted here -->
+        	<h4 class="modal-title" id="photoview-label"></h4>
+      	  </div>
+      	  <!-- The image being viewed will be inserted here -->
+      	  <div class="modal-body photoview-image"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- DIV for photo gallery -->
 	<div id="photoGallery-Container"></div>
 </body>
 </html>

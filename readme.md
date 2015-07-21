@@ -8,23 +8,26 @@
 - [Adding Photos](#adding-photos)
 - [Modifying easyphotogallery.js](#modifying-easyphotogalleryjs)
 - [Modifying EPGgetimages.php](#modifying-epggetimagesphp)
+- [Displaying Individual Photos](#displaying-individual-photos)
 
 <hr>
 
 ####Contents
 *Requires:*
 
-- bootstrap css
-- jquery
+- Bootstrap css
+- Bootstrap js
+- jQuery
 
 *Includes:*
 
-- bootstrap css
-- jquery
+- Bootstrap css
+- Bootstrap js
+- jQuery
 - index.html
 - easyphotogallery.js. 
 - EPGgetimages.php
-- Style.CSS
+- style.css
 
 ####Installation
 
@@ -55,6 +58,8 @@ appended inside a <code>div</code>: <code>&lt;div class="col-xs-12 col-sm-12 col
 classes are used by bootstrap to determine the column width of each image on differing screen sizes (xs, sm, md, lg). See the 
 bootstrap documentation for more information on using this feature: http://getbootstrap.com/css/#grid and http://getbootstrap.com/css/#responsive-utilities
 
+See also [Displaying Individual Photos](#displaying-individual-photos) below.
+
 ####Adding Photos
 Photos can be added to the directory <code>/img/easyPhotoGallery/</code> and they'll be automatically added to the photo gallery wherever your div appears.
 
@@ -83,3 +88,17 @@ $images[] = $file;
 }
 </pre>
 These lines (7-10) simply ignore system files (beginning with '.'). Currently, there's no way to ignore other non-image files, so the directory needs to only contain images.
+
+####Displaying Individual Photos
+
+Clicking an image opens a Bootstrap modal, showing the filename and the image.
+
+In your <code>index.html</code> file, there's a heading which the js file displays the filename inside of:
+<pre>
+	<h4 class="modal-title" id="photoview-label"></h4>
+</pre>
+There's also a div in which the image is displayed:
+<pre>
+	<div class="modal-body photoview-image"></div>
+</pre>
+*This modal is the reason that <code>bootstrap.js</code> is included in the dependencies. As with both the Bootstrap js and css, the .min versions may be substitued out.
