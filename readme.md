@@ -33,17 +33,18 @@
 *II. To add the gallery to your site, you must copy the files into the proper directories, or change the file paths accordingly. 
 Defaults:*
 
-<code>index.html</code> - <code> root directory </code>
+<code>index.html</code>  |  <code> root directory </code>
+<code>easyphotogallery.js</code> and <code>EPGGgetimages.php</code>  |  <code> /scripts/ </code>
 
-the gallery will be displayed in a div. Your html document must include this div to display the photos gallery:
+<code>style.css</code>  |  </code> <code> /styles/ </code>
+
+
+the gallery will be displayed in a div. Your html document must include this div with id photoGallery-Container to display the photos gallery:
 
 <code> &lt;div id="photoGallery-Container"&gt;&lt;/div&gt; </code>
 
-<code>easyphotogallery.js</code> and <code>EPGGgetimages.php</code> - <code> /scripts/ </code>
-
-<code>style.css</code> - </code> <code> /styles/ </code>
-
 *Note: Your server must be running php for this gallery to work*
+
 
 *III. add the <code>easyphotogallery.js</code> file in the head of your document in which the div appears.*
 
