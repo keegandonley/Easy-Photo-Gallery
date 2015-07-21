@@ -2,12 +2,12 @@
 ####The simpest way to add a photo gallery to your website
 <hr>
 #####Index
-- [Contents](#Contents)
-- [Installation](#Installation)
-- [Bootstrap Integration](#Bootstrap-Integration)
-- [Adding Photos](#Adding-Photos)
-- [Modifying easyphotogallery.js](#Modifying-easyphotogallery.js)
-- [Modifying EPGgetimages.php](#Modifying-EPGgetimages.php)
+- [Contents](#contents)
+- [Installation](#installation)
+- [Bootstrap Integration](#bootstrap-integration)
+- [Adding Photos](#adding-photos)
+- [Modifying easyphotogallery.js](#modifying-easyphotogalleryjs)
+- [Modifying EPGgetimages.php](#modifying-epggetimagesphp)
 
 <hr>
 
