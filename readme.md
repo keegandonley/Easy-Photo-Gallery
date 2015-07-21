@@ -41,3 +41,14 @@ bootstrap documentation for more information on using this feature: http://getbo
 
 ####Adding Photos####
 Photos can be added to the directory <code>/img/easyPhotoGallery/</code> and they'll be automatically added to the photo gallery wherever your div appears.
+
+####Javascript File####
+<pre>
+var photos = dataPhotoReturn,
+	    i = 0;
+		while (i &lt; photos.length) {
+			// Appends a div containing the respecive image
+			$('#photoGallery-Container').append('&lt;div class=&quot;col-xs-12 col-sm-12 col-md-6 col-lg-4 imageContainer&quot;&gt; &lt;a href=&quot;/img/easyPhotoGallery/' +  photos[i] + '&quot;&gt;&lt;img class=&quot;galleryImage&quot; src=&quot;/img/easyPhotoGallery/' +  photos[i] +'&quot;&quot; style=&quot;width: 100%&quot;&gt;&lt;/a&gt;&lt;/div&gt;');
+			i++
+		}
+</pre>
