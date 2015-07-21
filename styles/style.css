@@ -1,0 +1,7 @@
+img.galleryImage:hover {
+	opacity: .5;
+}
+
+.imageContainer {
+	margin-top: 20px;
+}
