@@ -34,6 +34,7 @@
 Defaults:*
 
 <code>index.html</code>  |  <code> root directory </code>
+
 <code>easyphotogallery.js</code> and <code>EPGGgetimages.php</code>  |  <code> /scripts/ </code>
 
 <code>style.css</code>  |  </code> <code> /styles/ </code>
