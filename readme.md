@@ -13,6 +13,7 @@
 3. index.html
 4. easyphotogallery.js
 5. EPGgetimages.php
+6. Style.CSS
 
 ####Installation####
 
@@ -28,6 +29,8 @@ the gallery will be displayed in a div. Your html document must include this div
 <code> &lt;div id="photoGallery-Container"&gt;&lt;/div&gt; </code>
 
 <code>easyphotogallery.js</code> and <code>EPGGgetimages.php</code> - <code> /scripts/ </code>
+
+<code>style.css</code> - </code> <code> /styles/ </code>
 
 *Note: Your server must be running php for this gallery to work*
 
@@ -52,3 +55,18 @@ var photos = dataPhotoReturn,
 			i++
 		}
 </pre>
+The javascript file simply gets the JSON object passed from the PHP function and loops through it, appending each div containing each image in the array.
+
+####PHP File####
+<pre>
+$dir = opendir('../img/easyPhotoGallery/');
+</pre>
+Line 4 (above) opens the directory with the photos. This can be set to any directory in order to use this photo gallery with multiple different galleries.
+
+<pre>
+if (substr($file,0,1) !== ".") {
+
+$images[] = $file;
+}
+</pre>
+These lines (7-10) simple ignore system files (beginning with '.'). Currently, there's no way to ignore other non-image files, so the directory needs to only contain images.
