@@ -69,4 +69,4 @@ if (substr($file,0,1) !== ".") {
 $images[] = $file;
 }
 </pre>
-These lines (7-10) simple ignore system files (beginning with '.'). Currently, there's no way to ignore other non-image files, so the directory needs to only contain images.
+These lines (7-10) simply ignore system files (beginning with '.'). Currently, there's no way to ignore other non-image files, so the directory needs to only contain images.
