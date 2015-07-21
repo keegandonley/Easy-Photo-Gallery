@@ -17,6 +17,7 @@
 ####Installation####
 
 I. Download and extract files
+
 II. To add the gallery to your site, you must copy the files into the proper directories, or change the file paths accordingly. 
 Defaults:
 
@@ -39,4 +40,4 @@ classes are used by bootstrap to determine the column width of each image on dif
 bootstrap documentation for more information on using this feature: http://getbootstrap.com/css/#grid and http://getbootstrap.com/css/#responsive-utilities
 
 ####Adding Photos####
-Photos can be added to the directory <code>/img/easyPhotoGallery/</code> and they'll be automatically added to the photo gallery wherever your div appears
+Photos can be added to the directory <code>/img/easyPhotoGallery/</code> and they'll be automatically added to the photo gallery wherever your div appears.
