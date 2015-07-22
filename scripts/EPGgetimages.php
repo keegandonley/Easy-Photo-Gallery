@@ -12,4 +12,6 @@ while (($file = readdir($dir)) !== false)
 closedir($dir);
 
 echo json_encode($images);
+// To add multiple galleries, the best way (currently) is to create another php file to do the same thing
+// on a different directory.
 ?>

@@ -9,6 +9,8 @@
 - [Modifying easyphotogallery.js](#modifying-easyphotogalleryjs)
 - [Modifying EPGgetimages.php](#modifying-epggetimagesphp)
 - [Displaying Individual Photos](#displaying-individual-photos)
+- [File Type Support](#file-type-support)
+- [Multiple Galleries](#multiple-galleries)
 
 <hr>
 
@@ -101,4 +103,12 @@ There's also a div in which the image is displayed:
 <pre>
 	&lt;div class=&quot;modal-body photoview-image&quot;&gt;&lt;/div&gt;
 </pre>
-*This modal is the reason that <code>bootstrap.js</code> is included in the dependencies. As with both the Bootstrap js and css, the .min versions may be substitued out.
+*This modal is the reason that <code>bootstrap.js</code> is included in the dependencies. As with both the Bootstrap js and css, the .min versions may be substitued out.*
+
+####File Type Support
+
+This photo gallery supports any file type supported by standard HTML. The 3 commonly supported image types are <code>JPEG</code>, <code>PNG</code>, and <code>GIF</code>. <code>BMP</code> files should work fairly well across browser, but it's safest to stick to those 3. There's a great table on Wikipedia will full cross-browser compatibility of most common image files: [Wikipedia Table](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).
+
+####Multiple Galleries
+
+Currently, there is no support for multiple galleries to be displayed. One way around this is to open multiple directories manually (i.e running a similar php function on each separate directory as a different photo 'library'). In this way, multiple divs may be created with different ID's and the js file adjusted accordingly to put the correct photo library in each div. The next version will add this functionality automatically in order to display multiple libraries seamlessly. See comments in the files for more information.

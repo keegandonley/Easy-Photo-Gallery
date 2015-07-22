@@ -27,3 +27,8 @@ $('.imageContainer').click(function(){
 	$('.photoview-image').html('<img src="/imag/easyPhotoGallery/' + image + '" style="width: 100%">');
 })
 }
+
+// IN ORDER TO ADD MULTIPLE GALLERIES:
+// Currently, multiple galleries isn't supported.
+// If multiple PHP files are created for each directory (read: 'gallery'),
+// Another js function can be writted to display another gallery in a different div.
