@@ -12,9 +12,10 @@ $(function loadimages() {
 		while (i < photos.length) {
 			var filename = photos[i]
 			// Appends a div containing the respecive image
-			$('#photoGallery-Container').append('<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 imageContainer" data-target="' + filename +'"> <a href="/img/easyPhotoGallery/' +  filename + '"><img class="galleryImage" src="/img/easyPhotoGallery/' +  filename +'"" style="width: 100%"></a></div>');
+			$('#photoGallery-Container').append('<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 imageContainer" data-image="' + filename +'" data-toggle="modal" data-target="#photoview-modal"> <img class="galleryImage" src="/img/easyPhotoGallery/' +  filename +'" style="width: 100%"></div>');
 			i++
 		}
+		$('.EPG-numfiles').html(photos.length);
 		openimage();
 
 	})
@@ -24,7 +25,7 @@ function openimage() {
 $('.imageContainer').click(function(){
 	var image = $(this).data('image')
 	$('#photoview-label').html(image);
-	$('.photoview-image').html('<img src="/imag/easyPhotoGallery/' + image + '" style="width: 100%">');
+	$('.photoview-image').html('<img src="/img/easyPhotoGallery/' + image + '" style="width: 100%">');
 })
 }
 

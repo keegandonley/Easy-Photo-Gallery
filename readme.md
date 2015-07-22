@@ -35,6 +35,8 @@
 
 *I. Download and extract files*
 
+Rendering index.html as-is will produce a sample gallery with 4 images and a little bit of data. The simplest way to run the PHP scripts locally is to use [MAMP](https://www.mamp.info/en/downloads/), which includes Apache, MySQL, & PHP.
+
 *II. To add the gallery to your site, you must copy the files into the proper directories, or change the file paths accordingly. 
 Defaults:*
 
@@ -107,7 +109,7 @@ There's also a div in which the image is displayed:
 
 ####File Type Support
 
-This photo gallery supports any file type supported by standard HTML. The 3 commonly supported image types are <code>JPEG</code>, <code>PNG</code>, and <code>GIF</code>. <code>BMP</code> files should work fairly well across browser, but it's safest to stick to those 3. There's a great table on Wikipedia will full cross-browser compatibility of most common image files: [Wikipedia Table](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).
+This photo gallery supports any file type supported by standard HTML. The 3 commonly supported image types are <code>JPEG</code>, <code>PNG</code>, and <code>GIF</code>. <code>BMP</code> files should work fairly well across browser, but it's safest to stick to those 3. There's a great table on Wikipedia with full cross-browser compatibility of most common image files: [Wikipedia Table](https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Image_format_support).
 
 ####Multiple Galleries
 

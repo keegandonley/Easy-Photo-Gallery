@@ -5,3 +5,10 @@ img.galleryImage:hover {
 .imageContainer {
 	margin-top: 20px;
 }
+
+div.infoContainer-EPG {
+	margin: auto;
+	width: 98%;
+	margin-top: 20px;
+
+}
