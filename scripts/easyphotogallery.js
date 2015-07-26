@@ -20,6 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 $(function loadimages() {
+	console.log("Easy Photo Gallery"); // Easy Photo Gallery
+	console.log("developed by Keegan Donley"); // developed by Keegan Donley
+	console.log("");
 	$('#photoGallery-Container').empty();
 	var dataPhotoReturn;
 
@@ -30,10 +33,13 @@ $(function loadimages() {
 
 	    var photos = dataPhotoReturn,
 	    i = 0;
+
+	    console.log("File names:");
 		while (i < photos.length) {
 			var filename = photos[i]
 			// Appends a div containing the respecive image
 			$('#photoGallery-Container').append('<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 imageContainer" data-image="' + filename +'" data-toggle="modal" data-target="#photoview-modal"> <img class="galleryImage" src="/img/easyPhotoGallery/' +  filename +'" style="width: 100%"></div>');
+			console.log(filename); //temporary loggin of file names -- disable in production (especially if there's lots of fiels)
 			i++
 		}
 		$('.EPG-numfiles').html(photos.length);
